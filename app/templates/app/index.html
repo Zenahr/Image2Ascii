@@ -5,12 +5,12 @@
 {% block content %}
     <section class="index">
         <div class="wrapper">
-            <h1 class="h1-page-title">ASCII-Generator</h1>
+            <!-- <h1 class="h1-page-title">ASCII-Generator</h1> -->
             <div class="img2ascii-input {% if app_txt_mode %}hide{% endif %}">
-                <h2 class="h2-method-desc">{% translate 'Upload an image file to convert it to ASCII art' %}</h2>
+                <!-- <h2 class="h2-method-desc">{% translate 'Select a file to convert it to ASCII art' %}</h2> -->
                 <div class="file-upload__modal{% if ascii_obj and not app_txt_mode %} hide{% endif %}" role="section">
                     {# https://codepen.io/mmhuntsberry/pen/QowZwR #}
-                    <p class="file-upload__modal-title" role="heading">{% translate 'UPLOAD IMAGE' %}</p>
+                    <p class="file-upload__modal-title" role="heading">{% translate 'CHOOSE IMAGE' %}</p>
                     <p class="file-upload__error" role="alertdialog"></p>
                     <ul class="file__list js-file__list" role="list"></ul>
                     <form class="file-upload__form js-dropzone" role="form" method="POST"
@@ -131,7 +131,6 @@
                         </form>
                     </div>
                 </div>
-                <p class="ps-tiny">{% translate '...or try the text to ASCII' %}</p>
             </div>
             <div class="txt2ascii-input {% if not app_txt_mode %}hide{% endif %}">
                 <h2 class="h2-method-desc">{% translate 'Type text to convert it to ASCII art' %}</h2>
