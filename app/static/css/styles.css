@@ -10,7 +10,7 @@
   display: none !important;
 }
 .wrapper {
-  background-color: #da4c5c;
+  background-color: #262626;
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 25px;
@@ -26,13 +26,13 @@ main#full-size {
 }
 @media screen and (min-height: 1080px) {
   main#full-size {
-    min-height: calc(960px);
+    min-height: calc(1080px - 60px - 60px);
   }
 }
 body {
   font-family: 'Ubuntu', sans-serif, 'Times New Roman';
   color: #ffffff;
-  background-color: #da4c5c;
+  background-color: #262626;
   position: relative;
 }
 ul,
@@ -85,7 +85,7 @@ a {
   color: #ffffff;
 }
 a.a_accent {
-  color: #e93644;
+  color: #7e00af;
 }
 a.a_underline_animation,
 a.a_underline_animation_small,
@@ -147,7 +147,7 @@ a.a_underline_animation_primary:after,
 section.about .text-window a:after,
 section.policy_privacy .text-window a:after,
 section.policy_cookie .text-window a:after {
-  background: #e93644;
+  background: #7e00af;
   height: 1px;
 }
 input,
@@ -160,11 +160,11 @@ textarea:invalid {
   box-shadow: none;
 }
 input.btn_1 {
-  background-color: #da4c5c;
+  background-color: #262626;
   color: #ffffff;
 }
 input.btn_1:hover {
-  background-color: #e93644;
+  background-color: #7e00af;
 }
 input.btn_2 {
   background-color: #ffffff;
@@ -255,7 +255,7 @@ header .mobile-menu-btn {
 }
 header .mobile-menu-btn li {
   z-index: 100;
-  background-color: #e93644;
+  background-color: #7e00af;
   bottom: 0;
   height: 2px;
   left: 0;
@@ -298,7 +298,7 @@ header nav.mobile-menu {
   top: 0;
   width: 100%;
   transform: translate3d(100%, 0, 0);
-  transition: transform .2s linear;
+  transition: transform 0.2s linear;
   justify-content: center;
   align-items: center;
 }
@@ -311,7 +311,7 @@ header nav.mobile-menu ul li {
   transition: 0.2s background-color;
 }
 header nav.mobile-menu ul li:hover {
-  background-color: #da4c5c;
+  background-color: #262626;
 }
 header nav.mobile-menu ul li:hover a {
   color: white;
@@ -382,15 +382,15 @@ main section.index .wrapper .file-upload__modal .file-upload__form {
   max-width: 300px;
   height: 150px;
   margin: 0 25px;
-  transition: all .2s;
+  transition: all 0.2s;
   border: 2px dashed rgba(233, 54, 68, 0.3);
   border-radius: 15px;
 }
 main section.index .wrapper .file-upload__modal .file-upload__form.hovered {
-  border: 2px dashed #e93644;
+  border: 2px dashed #7e00af;
 }
 main section.index .wrapper .file-upload__modal .file-upload__form:hover {
-  border: 2px dashed #e93644;
+  border: 2px dashed #7e00af;
 }
 main section.index .wrapper .file-upload__modal .file__input {
   display: none;
@@ -410,14 +410,14 @@ main section.index .wrapper .file-upload__modal .file__input-label-button {
   font-size: 19px;
   letter-spacing: 1.3px;
   line-height: 1.5;
-  transition: all .2s;
-  color: #e93644;
+  transition: all 0.2s;
+  color: #7e00af;
   cursor: pointer;
   border: none;
   text-transform: uppercase;
 }
 main section.index .wrapper .file-upload__modal .file__input-label-button:hover {
-  color: #e93644;
+  color: #7e00af;
 }
 main section.index .wrapper .file-upload__modal .file-details__container {
   display: grid;
@@ -435,7 +435,7 @@ main section.index .wrapper .file-upload__modal .file-output__list-item {
 main section.index .wrapper .file-upload__modal .file-output__list-item-name {
   color: #242424;
   margin-bottom: 10px;
-  opacity: .9;
+  opacity: 0.9;
   font-size: 15px;
 }
 main section.index .wrapper .file-upload__modal .file-output__progress-bar {
@@ -449,11 +449,11 @@ main section.index .wrapper .file-upload__modal .file-output__progress-bar[value
   background-color: rgba(128, 76, 92, 0.2);
 }
 main section.index .wrapper .file-upload__modal .progress-bar--in-progress[value]::-webkit-progress-value {
-  background-color: #da4c5c;
+  background-color: #262626;
 }
 main section.index .wrapper .file-upload__modal .progress-bar--is-finished[value]::-webkit-progress-value {
-  transition: all .25s;
-  background-color: #e93644;
+  transition: all 0.25s;
+  background-color: #7e00af;
 }
 main section.index .wrapper form.txt2ascii-form {
   margin-top: 20px;
@@ -479,7 +479,7 @@ main section.index .wrapper form.txt2ascii-form .inline-grid_inline-text input[t
 main section.index .wrapper form.txt2ascii-form .inline-grid_inline-text input[type=submit] {
   text-align: center;
   border-radius: unset;
-  border-left: 2px solid #da4c5c;
+  border-left: 2px solid #262626;
 }
 main section.index .wrapper form.txt2ascii-form .multi-line_text {
   margin: 0 auto;
@@ -834,7 +834,7 @@ main section.index .wrapper .ascii-text-output .buttons.second_row select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url("../svg/dropdown.svg") 100% no-repeat #ffffff;
+  background: url("../svg/dropdown.svg") 100% no-repeat #FFFFFF;
   cursor: pointer;
 }
 main section.index .wrapper .ascii-text-output .buttons.second_row select::-ms-expand {
@@ -890,7 +890,7 @@ main section.policy_privacy .wrapper .text-window h4 {
 main section.about .wrapper .text-window a,
 main section.policy_cookie .wrapper .text-window a,
 main section.policy_privacy .wrapper .text-window a {
-  color: #e93644;
+  color: #7e00af;
 }
 main section.about .wrapper .text-window ul,
 main section.policy_cookie .wrapper .text-window ul,
@@ -1012,14 +1012,14 @@ main section.feedback .wrapper form.feedback-form .feedback-agreement #id_agreem
   background: white;
 }
 main section.feedback .wrapper form.feedback-form .feedback-agreement #id_agreement:hover + label:before {
-  background: #da4c5c;
+  background: #262626;
 }
 main section.feedback .wrapper form.feedback-form .feedback-agreement #id_agreement:focus + label:before {
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
   border: 1px solid #242424;
 }
 main section.feedback .wrapper form.feedback-form .feedback-agreement #id_agreement:checked + label:before {
-  background: #e93644;
+  background: #7e00af;
   border: 1px solid #242424;
 }
 main section.feedback .wrapper form.feedback-form .feedback-agreement #id_agreement:disabled + label {
@@ -1082,7 +1082,7 @@ main section.page_error .wrapper .page_error_message a.go_home input {
 }
 main section.page_error .wrapper .page_error_message a.go_home input:hover {
   background-color: #ffffff;
-  color: #e93644;
+  color: #7e00af;
 }
 footer {
   font-size: 15px;
@@ -1156,7 +1156,7 @@ footer .wrapper .language-switcher .language-switcher-window span {
   width: 100%;
 }
 .agreements a {
-  color: #e93644;
+  color: #7e00af;
 }
 .agreements .wrapper {
   background-color: transparent;
@@ -1207,7 +1207,7 @@ footer .wrapper .language-switcher .language-switcher-window span {
   font-size: 24px;
 }
 #ascii-share-dialog a {
-  color: #e93644;
+  color: #7e00af;
 }
 #ascii-share-dialog p.text {
   padding-top: 15px;
