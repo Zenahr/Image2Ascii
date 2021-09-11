@@ -78,12 +78,12 @@
                                      id="button_art_download"
                                      alt="{% translate 'Save ASCII art as .png' %}">
                             </div>
-                            <div class="share_art{% if ascii_obj and not app_txt_mode %} hide{% endif %}">
+                            <!-- <div class="share_art{% if ascii_obj and not app_txt_mode %} hide{% endif %}">
                                 <img src="{% static 'svg/share.svg' %}" width="40" height="40"
                                      data-tippy-content="{% translate 'Share with access by link' %}"
                                      class="button_art_share img_share"
                                      alt="{% translate 'Share with access by link' %}">
-                            </div>
+                            </div> -->
                             <div class="report_art{% if not ascii_obj or app_txt_mode %} hide{% endif %}">
                                 <img src="{% static 'svg/report.svg' %}" width="40" height="40"
                                      {% comment %}Translators: Report is like "to complain"{% endcomment %}

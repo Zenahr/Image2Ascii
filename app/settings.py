@@ -13,7 +13,15 @@ if EASY_RUN_MODE:
 IN_TESTING = 'test' in sys.argv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
+if getattr(sys, 'frozen', False):
+    # we are running in a |PyInstaller| bundle
+    BASE_DIR = Path(sys._MEIPASS)
+    # BASE_DIR = Path(os.path.dirname(sys.executable)) # use this with --onefile option.
+else:
+    # we are running in a normal Python environment
+    BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
+
+
 
 # Import environment variables from python file if it exist. For local development only.
 if os.path.exists(os.path.join(BASE_DIR, 'project/env_vars.py')):
@@ -94,7 +102,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'project.wsgi.application'
+WSGI_APPLICATION = 'app.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
