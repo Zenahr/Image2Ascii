@@ -74,9 +74,9 @@
                             </div>
                             <div class="download_art">
                                 <img src="{% static 'svg/download.svg' %}" width="40" height="40"
-                                     data-tippy-content="{% translate 'Download ASCII art as .png' %}"
+                                     data-tippy-content="{% translate 'Save ASCII art as .png' %}"
                                      id="button_art_download"
-                                     alt="{% translate 'Download ASCII art as .png' %}">
+                                     alt="{% translate 'Save ASCII art as .png' %}">
                             </div>
                             <div class="share_art{% if ascii_obj and not app_txt_mode %} hide{% endif %}">
                                 <img src="{% static 'svg/share.svg' %}" width="40" height="40"
@@ -109,7 +109,7 @@
                                 {% translate 'Options' %}:</p>
                             <div class="options_grid">
                                 <div class="option num_cols">
-                                    <label for="option_num_cols">{% translate 'Columns' %}</label>
+                                    <label for="option_num_cols">{% translate 'Resolution' %}</label>
                                     <input type="text" value="90" id="option_num_cols" name="num_cols">
                                 </div>
                                 <div class="option brightness">
