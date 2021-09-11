@@ -5,7 +5,7 @@ import sys
 from distutils.util import strtobool
 from pathlib import Path
 
-EASY_RUN_MODE = False  # Variable for fast project start without dealing with environment variables
+EASY_RUN_MODE = True  # Variable for fast project start without dealing with environment variables
 if EASY_RUN_MODE:
     os.environ['DEBUG'] = 'True'
     os.environ['SECRET_KEY'] = 'VERY_UNIQUE_AND_SECRET_KEY'
