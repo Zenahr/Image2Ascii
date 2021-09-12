@@ -1,1 +1,1 @@
-dist\Image2Ascii\Image2Ascii.exe runserver --noreload
+dist\Image2Ascii\Image2Ascii.exe
