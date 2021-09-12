@@ -16,7 +16,7 @@ class MainWindow(QMainWindow):
     def __init__(self, *args, **kwargs):
         super(MainWindow,self).__init__(*args, **kwargs)
         self.browser = QWebEngineView()
-        self.setWindowTitle("Application Title")
+        self.setWindowTitle("IMAGE2ASCII")
         self.browser.setUrl(QUrl("http://127.0.0.1:8000"))
         self.setCentralWidget(self.browser)
         self.show()
